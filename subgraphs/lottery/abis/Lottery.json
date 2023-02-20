@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_cakeTokenAddress",
+        "name": "_cadinuTokenAddress",
         "type": "address"
       },
       {
@@ -121,7 +121,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "priceTicketInCake",
+        "name": "priceTicketInCadinu",
         "type": "uint256"
       },
       {
@@ -256,62 +256,34 @@
   {
     "inputs": [],
     "name": "MAX_LENGTH_LOTTERY",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "MAX_TREASURY_FEE",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "MIN_DISCOUNT_DIVISOR",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "MIN_LENGTH_LOTTERY",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      },
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" },
       {
         "internalType": "uint32[]",
         "name": "_ticketNumbers",
@@ -325,13 +297,9 @@
   },
   {
     "inputs": [],
-    "name": "cakeToken",
+    "name": "cadinuToken",
     "outputs": [
-      {
-        "internalType": "contract IERC20",
-        "name": "",
-        "type": "address"
-      }
+      { "internalType": "contract IERC20", "name": "", "type": "address" }
     ],
     "stateMutability": "view",
     "type": "function"
@@ -343,25 +311,11 @@
         "name": "_discountDivisor",
         "type": "uint256"
       },
-      {
-        "internalType": "uint256",
-        "name": "_priceTicket",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_numberTickets",
-        "type": "uint256"
-      }
+      { "internalType": "uint256", "name": "_priceTicket", "type": "uint256" },
+      { "internalType": "uint256", "name": "_numberTickets", "type": "uint256" }
     ],
     "name": "calculateTotalPriceForBulkTickets",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "pure",
     "type": "function"
   },
@@ -380,21 +334,13 @@
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      },
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" },
       {
         "internalType": "uint256[]",
         "name": "_ticketIds",
         "type": "uint256[]"
       },
-      {
-        "internalType": "uint32[]",
-        "name": "_brackets",
-        "type": "uint32[]"
-      }
+      { "internalType": "uint32[]", "name": "_brackets", "type": "uint32[]" }
     ],
     "name": "claimTickets",
     "outputs": [],
@@ -403,11 +349,7 @@
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      }
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" }
     ],
     "name": "closeLottery",
     "outputs": [],
@@ -417,41 +359,21 @@
   {
     "inputs": [],
     "name": "currentLotteryId",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "currentTicketId",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bool",
-        "name": "_autoInjection",
-        "type": "bool"
-      }
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" },
+      { "internalType": "bool", "name": "_autoInjection", "type": "bool" }
     ],
     "name": "drawFinalNumberAndMakeLotteryClaimable",
     "outputs": [],
@@ -460,16 +382,8 @@
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_amount",
-        "type": "uint256"
-      }
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" },
+      { "internalType": "uint256", "name": "_amount", "type": "uint256" }
     ],
     "name": "injectFunds",
     "outputs": [],
@@ -479,91 +393,49 @@
   {
     "inputs": [],
     "name": "injectorAddress",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "maxNumberTicketsPerBuyOrClaim",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
-    "name": "maxPriceTicketInCake",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "name": "maxPriceTicketInCadinu",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
-    "name": "minPriceTicketInCake",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "name": "minPriceTicketInCadinu",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "operatorAddress",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "owner",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "pendingInjectionNextLottery",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
@@ -582,16 +454,8 @@
   },
   {
     "inputs": [
-      {
-        "internalType": "address",
-        "name": "_tokenAddress",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_tokenAmount",
-        "type": "uint256"
-      }
+      { "internalType": "address", "name": "_tokenAddress", "type": "address" },
+      { "internalType": "uint256", "name": "_tokenAmount", "type": "uint256" }
     ],
     "name": "recoverWrongTokens",
     "outputs": [],
@@ -622,16 +486,16 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_minPriceTicketInCake",
+        "name": "_minPriceTicketInCadinu",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_maxPriceTicketInCake",
+        "name": "_maxPriceTicketInCadinu",
         "type": "uint256"
       }
     ],
-    "name": "setMinAndMaxTicketPriceInCake",
+    "name": "setMinAndMaxTicketPriceInCadinu",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -661,14 +525,10 @@
   },
   {
     "inputs": [
+      { "internalType": "uint256", "name": "_endTime", "type": "uint256" },
       {
         "internalType": "uint256",
-        "name": "_endTime",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_priceTicketInCake",
+        "name": "_priceTicketInCadinu",
         "type": "uint256"
       },
       {
@@ -681,11 +541,7 @@
         "name": "_rewardsBreakdown",
         "type": "uint256[6]"
       },
-      {
-        "internalType": "uint256",
-        "name": "_treasuryFee",
-        "type": "uint256"
-      }
+      { "internalType": "uint256", "name": "_treasuryFee", "type": "uint256" }
     ],
     "name": "startLottery",
     "outputs": [],
@@ -694,11 +550,7 @@
   },
   {
     "inputs": [
-      {
-        "internalType": "address",
-        "name": "newOwner",
-        "type": "address"
-      }
+      { "internalType": "address", "name": "newOwner", "type": "address" }
     ],
     "name": "transferOwnership",
     "outputs": [],
@@ -708,59 +560,35 @@
   {
     "inputs": [],
     "name": "treasuryAddress",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "viewCurrentLotteryId",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      }
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" }
     ],
     "name": "viewLottery",
     "outputs": [
       {
         "components": [
           {
-            "internalType": "enum PancakeSwapLottery.Status",
+            "internalType": "enum CadinuLottery.Status",
             "name": "status",
             "type": "uint8"
           },
+          { "internalType": "uint256", "name": "startTime", "type": "uint256" },
+          { "internalType": "uint256", "name": "endTime", "type": "uint256" },
           {
             "internalType": "uint256",
-            "name": "startTime",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "endTime",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "priceTicketInCake",
+            "name": "priceTicketInCadinu",
             "type": "uint256"
           },
           {
@@ -780,7 +608,7 @@
           },
           {
             "internalType": "uint256[6]",
-            "name": "cakePerBracket",
+            "name": "cadinuPerBracket",
             "type": "uint256[6]"
           },
           {
@@ -800,16 +628,12 @@
           },
           {
             "internalType": "uint256",
-            "name": "amountCollectedInCake",
+            "name": "amountCollectedInCadinu",
             "type": "uint256"
           },
-          {
-            "internalType": "uint32",
-            "name": "finalNumber",
-            "type": "uint32"
-          }
+          { "internalType": "uint32", "name": "finalNumber", "type": "uint32" }
         ],
-        "internalType": "struct PancakeSwapLottery.Lottery",
+        "internalType": "struct CadinuLottery.Lottery",
         "name": "",
         "type": "tuple"
       }
@@ -819,104 +643,51 @@
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256[]",
-        "name": "_ticketIds",
-        "type": "uint256[]"
-      }
+      { "internalType": "uint256[]", "name": "_ticketIds", "type": "uint256[]" }
     ],
     "name": "viewNumbersAndStatusesForTicketIds",
     "outputs": [
-      {
-        "internalType": "uint32[]",
-        "name": "",
-        "type": "uint32[]"
-      },
-      {
-        "internalType": "bool[]",
-        "name": "",
-        "type": "bool[]"
-      }
+      { "internalType": "uint32[]", "name": "", "type": "uint32[]" },
+      { "internalType": "bool[]", "name": "", "type": "bool[]" }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_ticketId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint32",
-        "name": "_bracket",
-        "type": "uint32"
-      }
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" },
+      { "internalType": "uint256", "name": "_ticketId", "type": "uint256" },
+      { "internalType": "uint32", "name": "_bracket", "type": "uint32" }
     ],
     "name": "viewRewardsForTicketId",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_lotteryId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_cursor",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_size",
-        "type": "uint256"
-      }
+      { "internalType": "address", "name": "_user", "type": "address" },
+      { "internalType": "uint256", "name": "_lotteryId", "type": "uint256" },
+      { "internalType": "uint256", "name": "_cursor", "type": "uint256" },
+      { "internalType": "uint256", "name": "_size", "type": "uint256" }
     ],
     "name": "viewUserInfoForLotteryId",
     "outputs": [
-      {
-        "internalType": "uint256[]",
-        "name": "",
-        "type": "uint256[]"
-      },
-      {
-        "internalType": "uint32[]",
-        "name": "",
-        "type": "uint32[]"
-      },
-      {
-        "internalType": "bool[]",
-        "name": "",
-        "type": "bool[]"
-      },
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
+      { "internalType": "uint256[]", "name": "", "type": "uint256[]" },
+      { "internalType": "uint32[]", "name": "", "type": "uint32[]" },
+      { "internalType": "bool[]", "name": "", "type": "bool[]" },
+      { "internalType": "uint256", "name": "", "type": "uint256" }
     ],
     "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_amount", "type": "uint256" }
+    ],
+    "name": "withdrawBnb",
+    "outputs": [],
+    "stateMutability": "nonpayable",
     "type": "function"
   }
 ]
